@@ -1,0 +1,29 @@
+# evaluation
+
+## Usage
+
+To evaluate, the following files are necessary:
+
+- DOA estimation result folder (csv format)
+- Real DOA files (csv format)
+
+These data or file can be generated from other subprojects which are saved in **Data/exp..** automatically.
+
+An example of how to run the script to evaluate is as follows:
+
+```bash
+python eval_runner_main.py --exp exp... --eval_alg srp_phat
+```
+
+Or want to get the result of one sample
+```bash
+python eval_runner_main.py --exp exp... --example --sample_name sample_0 --eval_alg srp_phat
+```
+
+The results are saved in **Data/exp../srp_phat_eval.json** or **Data/exp../eval_example** for example.
+
+## 📝 Citation
+If you use any files of this repository, please cite:
+
+Yang, X., Naylor, P. A., Doclo, S., Bitzer, J., 
+"NEURAL DRONE LOCALIZATION EXPLOITING SIGNAL SYNTHESIS OF REAL-WORLD AUDIO DATA", Eusipco 2025, Italy

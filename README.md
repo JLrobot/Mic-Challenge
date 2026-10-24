@@ -18,7 +18,11 @@ human in the loop.
 
 ## Repository layout
 - `hardware/uma16/`: array notes and microphone geometry (positions per USB channel).
-- More folders (data, code, simulation) will be added as we go.
+- `data/uma16_real/`: real 16-channel UMA-16 recordings (with calibration) to develop against.
+- `third_party/`: open-source capture / DOA / drone-sound simulation code we build on.
+- `sim/models/`: MuJoCo drone models.
+- `scripts/download_data.py`: fetches larger open drone-audio datasets (some with true flight trajectories).
+- `DATA_SOURCES.md`: where everything comes from and under which license.
 
 ## Data and licenses
 Third-party files keep their original license next to them. Large datasets are not committed; they are
